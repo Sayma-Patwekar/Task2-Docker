@@ -11,4 +11,4 @@ RUN mvn -f /home/app/pom.xml clean install -Dv=${BUILD_NUMBER}
 #
 FROM openjdk:11-jre-slim
 COPY target/*.war /usr/local/tomcat/webapps
-EXPOSE 6000
+EXPOSE 8080
